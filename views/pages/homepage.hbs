@@ -1,0 +1,14 @@
+<h1>Alf Store</h1>
+<p>This is my first store and I'm not sure of what I'm doing</p>
+<h2>Our products</h2>
+<ul>
+    {{#each products}}
+    <li>
+        Nombre: {{name}} ($ {{price}})
+    </li>
+        <a href="/edit/{{id}}">Edit {{name}}</a><br>
+        <a href="/show/{{id}}">Show Product</a>
+    {{/each}}
+</ul>
+
+<a type="button" class="btn btn-info" href="/add">Agregar Producto</a>

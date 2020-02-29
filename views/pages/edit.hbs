@@ -1,0 +1,20 @@
+<form class="form" method="post">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" value="{{product.name}}" id="name" name="name"><br>
+     </div>
+     <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="number" class="form-control" value="{{product.price}}" id="price" name="price"><br>
+    </div>
+    <div class="form-group">
+        <label for="des">Description:</label>
+        <input type="text" class="form-control" value="{{product.description}}" id="des" name="description"><br>
+    </div>
+    <div class="form-group">
+        <input type="hidden" class="form-control" value="{{product.id}}" id="id" name="id"><br>
+    </div>
+
+     <button type="submit" class="btn btn-default btn-warning">Update Product</button>   
+
+</form>
