@@ -16,7 +16,7 @@ router.get('/home', PagesController.homepage);
 router.get('/add', PagesController.add);
 
 // POST
-router.post('/home', PagesController.post);
+router.post('/', PagesController.post);
 
 // Identifica la ruta "/show" y la respuesta de la ruta
 router.get('/show/:id', PagesController.show);
